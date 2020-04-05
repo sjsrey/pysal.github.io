@@ -1,18 +1,14 @@
 {{ define "main" }}
 <div class="container">
 <table class="table table-striped">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-      </tr>
-    </thead>
     <tbody>
         {{ range .Pages }}
       <tr>
-        <td> <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Description}}</a> </td>
+        <td> <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}}:  {{.Description}}</a> </td>
       </tr>
       {{ end }}
     </tbody>
 </table>
 </div>
 {{ end }}
+
